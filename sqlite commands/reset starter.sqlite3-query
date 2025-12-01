@@ -1,5 +1,0 @@
--- database: ./Database.sqlite
-
---modiified user starter into NULL
-UPDATE User
-SET StarterPokemon = NULL;
