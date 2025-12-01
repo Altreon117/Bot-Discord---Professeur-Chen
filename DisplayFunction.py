@@ -274,10 +274,10 @@ def make_quiz_confirmed_embed(starter_nom: str, niveau: int, sexe: str, pokedex_
 # ---------- Pokédex ----------
 
 def make_pokedex_page_image(db_module, gen: int, page: int, page_size: int, search_term: str | None):
-    cols, rows = 6, 5
-    tile_w, tile_h = 540, 540
-    label_h = 70
-    header_h = 120
+    cols, rows = 6, 5 # Grille 6x5
+    tile_w, tile_h = 540, 540 # Taille d'une case
+    label_h = 70 # Espace pour le nom du Pokémon
+    header_h = 120 # Espace pour le titre
 
     offset = page * page_size
     if search_term:

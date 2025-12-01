@@ -1,0 +1,19 @@
+-- database: ../Database.sqlite
+
+ALTER TABLE Pokedex ADD COLUMN Type1 TEXT;
+ALTER TABLE Pokedex ADD COLUMN Type2 TEXT;
+ALTER TABLE User ADD COLUMN PokemonId TEXT REFERENCES AllPokemons(Id_Pokemon) DEFAULT NULL;
+
+ALTER TABLE AllPokemons ADD COLUMN Location TEXT
+DEFAULT 'PC';
+
+DROP TABLE IF EXISTS SpawnedPokemons;
+
+CREATE TABLE SpawnedPokemons (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    PokedexId INTEGER NOT NULL REFERENCES Pokedex(Id),
+    spawn_time DATETIME NOT NULL,
+    despawn_time DATETIME NOT NULL,
+    CaptureCode TEXT NOT NULL,
+    Niveau INTEGER NOT NULL DEFAULT 5
+);

@@ -1,0 +1,911 @@
+-- database: ../Database.sqlite
+
+INSERT INTO Pokedex (Id, Nom) VALUES
+-- Generation 1 --
+('0001','Bulbizarre'),
+('0002','Herbizarre'),
+('0003','Florizarre'),
+('0004','Salamèche'),
+('0005','Reptincel'),
+('0006','Dracaufeu'),
+('0007','Carapuce'),
+('0008','Carabaffe'),
+('0009','Tortank'),
+('0010','Chenipan'),
+('0011','Chrysacier'),
+('0012','Papilusion'),
+('0013','Aspicot'),
+('0014','Coconfort'),
+('0015','Dardargnan'),
+('0016','Roucool'),
+('0017','Roucoups'),
+('0018','Roucarnage'),
+('0019','Rattata'),
+('0020','Rattatac'),
+('0021','Piafabec'),
+('0022','Rapasdepic'),
+('0023','Abo'),
+('0024','Arbok'),
+('0025','Pikachu'),
+('0026','Raichu'),
+('0027','Sabelette'),
+('0028','Sablaireau'),
+('0029','Nidoran♀'),
+('0030','Nidorina'),
+('0031','Nidoqueen'),
+('0032','Nidoran♂'),
+('0033','Nidorino'),
+('0034','Nidoking'),
+('0035','Mélofée'),
+('0036','Mélodelfe'),
+('0037','Goupix'),
+('0038','Feunard'),
+('0039','Rondoudou'),
+('0040','Grodoudou'),
+('0041','Nosférapti'),
+('0042','Nosferalto'),
+('0043','Mystherbe'),
+('0044','Ortide'),
+('0045','Rafflesia'),
+('0046','Paras'),
+('0047','Parasect'),
+('0048','Mimitoss'),
+('0049','Aéromite'),
+('0050','Taupiqueur'),
+('0051','Triopikeur'),
+('0052','Miaouss'),
+('0053','Persian'),
+('0054','Psykokwak'),
+('0055','Akwakwak'),
+('0056','Férosinge'),
+('0057','Colossinge'),
+('0058','Caninos'),
+('0059','Arcanin'),
+('0060','Ptitard'),
+('0061','Têtarte'),
+('0062','Tartard'),
+('0063','Abra'),
+('0064','Kadabra'),
+('0065','Alakazam'),
+('0066','Machoc'),
+('0067','Machopeur'),
+('0068','Mackogneur'),
+('0069','Chétiflor'),
+('0070','Boustiflor'),
+('0071','Empiflor'),
+('0072','Tentacool'),
+('0073','Tentacruel'),
+('0074','Racaillou'),
+('0075','Gravalanch'),
+('0076','Grolem'),
+('0077','Ponyta'),
+('0078','Galopa'),
+('0079','Ramoloss'),
+('0080','Flagadoss'),
+('0081','Magnéti'),
+('0082','Magnéton'),
+('0083','Canarticho'),
+('0084','Doduo'),
+('0085','Dodrio'),
+('0086','Otaria'),
+('0087','Lamantine'),
+('0088','Tadmorv'),
+('0089','Grotadmorv'),
+('0090','Kokiyas'),
+('0091','Crustabri'),
+('0092','Fantominus'),
+('0093','Spectrum'),
+('0094','Ectoplasma'),
+('0095','Onix'),
+('0096','Soporifik'),
+('0097','Hypnomade'),
+('0098','Krabby'),
+('0099','Krabboss'),
+('0100','Voltorbe'),
+('0101','Électrode'),
+('0102','Noeunoeuf'),
+('0103','Noadkoko'),
+('0104','Osselait'),
+('0105','Ossatueur'),
+('0106','Kicklee'),
+('0107','Tygnon'),
+('0108','Excelangue'),
+('0109','Smogo'),
+('0110','Smogogo'),
+('0111','Rhinocorne'),
+('0112','Rhinoféros'),
+('0113','Leveinard'),
+('0114','Saquedeneu'),
+('0115','Kangourex'),
+('0116','Hypotrempe'),
+('0117','Hypocéan'),
+('0118','Poissirène'),
+('0119','Poissoroy'),
+('0120','Stari'),
+('0121','Staross'),
+('0122','Mr. Mime'),
+('0123','Insécateur'),
+('0124','Lippoutou'),
+('0125','Élektek'),
+('0126','Magmar'),
+('0127','Scarabrute'),
+('0128','Tauros'),
+('0129','Magicarpe'),
+('0130','Léviator'),
+('0131','Lokhlass'),
+('0132','Métamorph'),
+('0133','Évoli'),
+('0134','Aquali'),
+('0135','Voltali'),
+('0136','Pyroli'),
+('0137','Porygon'),
+('0138','Amonita'),
+('0139','Amonistar'),
+('0140','Kabuto'),
+('0141','Kabutops'),
+('0142','Ptéra'),
+('0143','Ronflex'),
+('0144','Artikodin'),
+('0145','Électhor'),
+('0146','Sulfura'),
+('0147','Minidraco'),
+('0148','Draco'),
+('0149','Dracolosse'),
+('0150','Mewtwo'),
+('0151','Mew');
+
+
+UPDATE Pokedex
+SET 
+    CatchRate = CASE Id
+        WHEN '0001' THEN 45
+        WHEN '0002' THEN 45
+        WHEN '0003' THEN 45
+        WHEN '0004' THEN 45
+        WHEN '0005' THEN 45
+        WHEN '0006' THEN 45
+        WHEN '0007' THEN 45
+        WHEN '0008' THEN 45
+        WHEN '0009' THEN 45
+        WHEN '0010' THEN 255
+        WHEN '0011' THEN 120
+        WHEN '0012' THEN 45
+        WHEN '0013' THEN 255
+        WHEN '0014' THEN 120
+        WHEN '0015' THEN 45
+        WHEN '0016' THEN 255
+        WHEN '0017' THEN 120
+        WHEN '0018' THEN 45
+        WHEN '0019' THEN 255
+        WHEN '0020' THEN 127
+        WHEN '0021' THEN 255
+        WHEN '0022' THEN 90
+        WHEN '0023' THEN 255
+        WHEN '0024' THEN 90
+        WHEN '0025' THEN 190
+        WHEN '0026' THEN 75
+        WHEN '0027' THEN 255
+        WHEN '0028' THEN 90
+        WHEN '0029' THEN 235
+        WHEN '0030' THEN 120
+        WHEN '0031' THEN 45
+        WHEN '0032' THEN 235
+        WHEN '0033' THEN 120
+        WHEN '0034' THEN 45
+        WHEN '0035' THEN 150
+        WHEN '0036' THEN 25
+        WHEN '0037' THEN 190
+        WHEN '0038' THEN 75
+        WHEN '0039' THEN 170
+        WHEN '0040' THEN 50
+        WHEN '0041' THEN 255
+        WHEN '0042' THEN 90
+        WHEN '0043' THEN 255
+        WHEN '0044' THEN 120
+        WHEN '0045' THEN 45
+        WHEN '0046' THEN 190
+        WHEN '0047' THEN 75
+        WHEN '0048' THEN 190
+        WHEN '0049' THEN 75
+        WHEN '0050' THEN 255
+        WHEN '0051' THEN 50
+        WHEN '0052' THEN 255
+        WHEN '0053' THEN 90
+        WHEN '0054' THEN 255
+        WHEN '0055' THEN 75
+        WHEN '0056' THEN 190
+        WHEN '0057' THEN 75
+        WHEN '0058' THEN 190
+        WHEN '0059' THEN 75
+        WHEN '0060' THEN 255
+        WHEN '0061' THEN 120
+        WHEN '0062' THEN 45
+        WHEN '0063' THEN 200
+        WHEN '0064' THEN 100
+        WHEN '0065' THEN 50
+        WHEN '0066' THEN 180
+        WHEN '0067' THEN 90
+        WHEN '0068' THEN 45
+        WHEN '0069' THEN 255
+        WHEN '0070' THEN 120
+        WHEN '0071' THEN 45
+        WHEN '0072' THEN 190
+        WHEN '0073' THEN 60
+        WHEN '0074' THEN 255
+        WHEN '0075' THEN 120
+        WHEN '0076' THEN 45
+        WHEN '0077' THEN 190
+        WHEN '0078' THEN 60
+        WHEN '0079' THEN 190
+        WHEN '0080' THEN 75
+        WHEN '0081' THEN 190
+        WHEN '0082' THEN 60
+        WHEN '0083' THEN 45
+        WHEN '0084' THEN 190
+        WHEN '0085' THEN 45
+        WHEN '0086' THEN 190
+        WHEN '0087' THEN 75
+        WHEN '0088' THEN 190
+        WHEN '0089' THEN 75
+        WHEN '0090' THEN 190
+        WHEN '0091' THEN 60
+        WHEN '0092' THEN 190
+        WHEN '0093' THEN 90
+        WHEN '0094' THEN 45
+        WHEN '0095' THEN 45
+        WHEN '0096' THEN 190
+        WHEN '0097' THEN 75
+        WHEN '0098' THEN 225
+        WHEN '0099' THEN 60
+        WHEN '0100' THEN 190
+        WHEN '0101' THEN 60
+        WHEN '0102' THEN 90
+        WHEN '0103' THEN 45
+        WHEN '0104' THEN 190
+        WHEN '0105' THEN 75
+        WHEN '0106' THEN 45
+        WHEN '0107' THEN 45
+        WHEN '0108' THEN 45
+        WHEN '0109' THEN 190
+        WHEN '0110' THEN 60
+        WHEN '0111' THEN 120
+        WHEN '0112' THEN 60
+        WHEN '0113' THEN 30
+        WHEN '0114' THEN 45
+        WHEN '0115' THEN 45
+        WHEN '0116' THEN 225
+        WHEN '0117' THEN 75
+        WHEN '0118' THEN 225
+        WHEN '0119' THEN 60
+        WHEN '0120' THEN 225
+        WHEN '0121' THEN 60
+        WHEN '0122' THEN 45
+        WHEN '0123' THEN 45
+        WHEN '0124' THEN 45
+        WHEN '0125' THEN 45
+        WHEN '0126' THEN 45
+        WHEN '0127' THEN 45
+        WHEN '0128' THEN 45
+        WHEN '0129' THEN 255
+        WHEN '0130' THEN 45
+        WHEN '0131' THEN 45
+        WHEN '0132' THEN 35
+        WHEN '0133' THEN 45
+        WHEN '0134' THEN 45
+        WHEN '0135' THEN 45
+        WHEN '0136' THEN 45
+        WHEN '0137' THEN 45
+        WHEN '0138' THEN 45
+        WHEN '0139' THEN 45
+        WHEN '0140' THEN 45
+        WHEN '0141' THEN 45
+        WHEN '0142' THEN 45
+        WHEN '0143' THEN 25
+        WHEN '0144' THEN 3
+        WHEN '0145' THEN 3
+        WHEN '0146' THEN 3
+        WHEN '0147' THEN 45
+        WHEN '0148' THEN 45
+        WHEN '0149' THEN 45
+        WHEN '0150' THEN 3
+        WHEN '0151' THEN 45
+    END,
+
+    Image = 'Poke' || Id || '.png'
+
+WHERE Id BETWEEN '0001' AND '0151';
+
+
+
+
+
+
+
+
+
+-- Generation 2 --
+INSERT INTO Pokedex (Id, Nom, Image) VALUES
+('0152','Germignon','Poke0152.png'),
+('0153','Macronium','Poke0153.png'),
+('0154','Méganium','Poke0154.png'),
+('0155','Héricendre','Poke0155.png'),
+('0156','Feurisson','Poke0156.png'),
+('0157','Typhlosion','Poke0157.png'),
+('0158','Kaiminus','Poke0158.png'),
+('0159','Crocrodil','Poke0159.png'),
+('0160','Aligatueur','Poke0160.png'),
+('0161','Fouinette','Poke0161.png'),
+('0162','Fouinar','Poke0162.png'),
+('0163','Hoothoot','Poke0163.png'),
+('0164','Noarfang','Poke0164.png'),
+('0165','Coxy','Poke0165.png'),
+('0166','Coxyclaque','Poke0166.png'),
+('0167','Mimigal','Poke0167.png'),
+('0168','Migalos','Poke0168.png'),
+('0169','Nostenfer','Poke0169.png'),
+('0170','Loupio','Poke0170.png'),
+('0171','Lanturn','Poke0171.png'),
+('0172','Pichu','Poke0172.png'),
+('0173','Mélo','Poke0173.png'),
+('0174','Toudoudou','Poke0174.png'),
+('0175','Togepi','Poke0175.png'),
+('0176','Togetic','Poke0176.png'),
+('0177','Natu','Poke0177.png'),
+('0178','Xatu','Poke0178.png'),
+('0179','Wattouat','Poke0179.png'),
+('0180','Lainergie','Poke0180.png'),
+('0181','Pharamp','Poke0181.png'),
+('0182','Joliflor','Poke0182.png'),
+('0183','Marill','Poke0183.png'),
+('0184','Azumarill','Poke0184.png'),
+('0185','Simularbre','Poke0185.png'),
+('0186','Tarpaud','Poke0186.png'),
+('0187','Granivol','Poke0187.png'),
+('0188','Floravol','Poke0188.png'),
+('0189','Cotovol','Poke0189.png'),
+('0190','Capumain','Poke0190.png'),
+('0191','Tournegrin','Poke0191.png'),
+('0192','Héliatronc','Poke0192.png'),
+('0193','Yanma','Poke0193.png'),
+('0194','Axoloto','Poke0194.png'),
+('0195','Maraiste','Poke0195.png'),
+('0196','Mentali','Poke0196.png'),
+('0197','Noctali','Poke0197.png'),
+('0198','Cornèbre','Poke0198.png'),
+('0199','Roigada','Poke0199.png'),
+('0200','Feuforêve','Poke0200.png'),
+('0201','Zarbi','Poke0201.png'),
+('0202','Qulbutoké','Poke0202.png'),
+('0203','Girafarig','Poke0203.png'),
+('0204','Pomdepik','Poke0204.png'),
+('0205','Foretress','Poke0205.png'),
+('0206','Insolourdo','Poke0206.png'),
+('0207','Scorplane','Poke0207.png'),
+('0208','Steelix','Poke0208.png'),
+('0209','Snubbull','Poke0209.png'),
+('0210','Granbull','Poke0210.png'),
+('0211','Qwilfish','Poke0211.png'),
+('0212','Cizayox','Poke0212.png'),
+('0213','Caratroc','Poke0213.png'),
+('0214','Scarhino','Poke0214.png'),
+('0215','Farfuret','Poke0215.png'),
+('0216','Teddiursa','Poke0216.png'),
+('0217','Ursaring','Poke0217.png'),
+('0218','Limagma','Poke0218.png'),
+('0219','Volcaropod','Poke0219.png'),
+('0220','Marcacrin','Poke0220.png'),
+('0221','Cochignon','Poke0221.png'),
+('0222','Corayon','Poke0222.png'),
+('0223','Rémoraid','Poke0223.png'),
+('0224','Octillery','Poke0224.png'),
+('0225','Cadoizo','Poke0225.png'),
+('0226','Démanta','Poke0226.png'),
+('0227','Airmure','Poke0227.png'),
+('0228','Malosse','Poke0228.png'),
+('0229','Démolosse','Poke0229.png'),
+('0230','Hyporoi','Poke0230.png'),
+('0231','Phanpy','Poke0231.png'),
+('0232','Donphan','Poke0232.png'),
+('0233','Porygon2','Poke0233.png'),
+('0234','Cerfrousse','Poke0234.png'),
+('0235','Queulorior','Poke0235.png'),
+('0236','Debugant','Poke0236.png'),
+('0237','Kapoera','Poke0237.png'),
+('0238','Lippouti','Poke0238.png'),
+('0239','Élekid','Poke0239.png'),
+('0240','Magby','Poke0240.png'),
+('0241','Écrémeuh','Poke0241.png'),
+('0242','Leuphorie','Poke0242.png'),
+('0243','Raikou','Poke0243.png'),
+('0244','Entei','Poke0244.png'),
+('0245','Suicune','Poke0245.png'),
+('0246','Embrylex','Poke0246.png'),
+('0247','Ymphect','Poke0247.png'),
+('0248','Tyranocif','Poke0248.png'),
+('0249','Lugia','Poke0249.png'),
+('0250','Ho-Oh','Poke0250.png'),
+('0251','Celebi','Poke0251.png');
+
+-- Generation 3 --
+INSERT INTO Pokedex (Id, Nom, Image) VALUES
+('0252','Arcko','Poke0252.png'),
+('0253','Massko','Poke0253.png'),
+('0254','Jungko','Poke0254.png'),
+('0255','Poussifeu','Poke0255.png'),
+('0256','Galifeu','Poke0256.png'),
+('0257','Braségali','Poke0257.png'),
+('0258','Gobou','Poke0258.png'),
+('0259','Flobio','Poke0259.png'),
+('0260','Laggron','Poke0260.png'),
+('0261','Medhyèna','Poke0261.png'),
+('0262','Grahynèna','Poke0262.png'),
+('0263','Zigzaton','Poke0263.png'),
+('0264','Linéon','Poke0264.png'),
+('0265','Chenipotte','Poke0265.png'),
+('0266','Armulys','Poke0266.png'),
+('0267','Charmillon','Poke0267.png'),
+('0268','Blindalys','Poke0268.png'),
+('0269','Papinox','Poke0269.png'),
+('0270','Nénupiot','Poke0270.png'),
+('0271','Lombre','Poke0271.png'),
+('0272','Ludicolo','Poke0272.png'),
+('0273','Grainipiot','Poke0273.png'),
+('0274','Pifeuil','Poke0274.png'),
+('0275','Tengalice','Poke0275.png'),
+('0276','Nirondelle','Poke0276.png'),
+('0277','Hélédelle','Poke0277.png'),
+('0278','Goélise','Poke0278.png'),
+('0279','Bekipan','Poke0279.png'),
+('0280','Tarsal','Poke0280.png'),
+('0281','Kirlia','Poke0281.png'),
+('0282','Gardevoir','Poke0282.png'),
+('0283','Arakdo','Poke0283.png'),
+('0284','Maskadra','Poke0284.png'),
+('0285','Balignon','Poke0285.png'),
+('0286','Chapignon','Poke0286.png'),
+('0287','Parecool','Poke0287.png'),
+('0288','Vigoroth','Poke0288.png'),
+('0289','Monaflèmit','Poke0289.png'),
+('0290','Ningale','Poke0290.png'),
+('0291','Ninjask','Poke0291.png'),
+('0292','Munja','Poke0292.png'),
+('0293','Chuchmur','Poke0293.png'),
+('0294','Ramboum','Poke0294.png'),
+('0295','Brouhabam','Poke0295.png'),
+('0296','Makuhita','Poke0296.png'),
+('0297','Hariyama','Poke0297.png'),
+('0298','Azurill','Poke0298.png'),
+('0299','Tarinor','Poke0299.png'),
+('0300','Skitty','Poke0300.png'),
+('0301','Delcatty','Poke0301.png'),
+('0302','Ténéfix','Poke0302.png'),
+('0303','Mysdibule','Poke0303.png'),
+('0304','Galekid','Poke0304.png'),
+('0305','Galegon','Poke0305.png'),
+('0306','Galeking','Poke0306.png'),
+('0307','Méditikka','Poke0307.png'),
+('0308','Charmina','Poke0308.png'),
+('0309','Dynavolt','Poke0309.png'),
+('0310','Élecsprint','Poke0310.png'),
+('0311','Posipi','Poke0311.png'),
+('0312','Négapi','Poke0312.png'),
+('0313','Muciole','Poke0313.png'),
+('0314','Lumivole','Poke0314.png'),
+('0315','Rosélia','Poke0315.png'),
+('0316','Gloupti','Poke0316.png'),
+('0317','Avaltout','Poke0317.png'),
+('0318','Carvanha','Poke0318.png'),
+('0319','Sharpedo','Poke0319.png'),
+('0320','Wailmer','Poke0320.png'),
+('0321','Wailord','Poke0321.png'),
+('0322','Chamallot','Poke0322.png'),
+('0323','Camérupt','Poke0323.png'),
+('0324','Chartor','Poke0324.png'),
+('0325','Spoink','Poke0325.png'),
+('0326','Groret','Poke0326.png'),
+('0327','Spinda','Poke0327.png'),
+('0328','Kraknoix','Poke0328.png'),
+('0329','Vibraninf','Poke0329.png'),
+('0330','Libégon','Poke0330.png'),
+('0331','Cacnéa','Poke0331.png'),
+('0332','Cacturne','Poke0332.png'),
+('0333','Tylton','Poke0333.png'),
+('0334','Altaria','Poke0334.png'),
+('0335','Mangriff','Poke0335.png'),
+('0336','Séviper','Poke0336.png'),
+('0337','Séléroc','Poke0337.png'),
+('0338','Solaroc','Poke0338.png'),
+('0339','Barloche','Poke0339.png'),
+('0340','Barbicha','Poke0340.png'),
+('0341','Écrapince','Poke0341.png'),
+('0342','Colhomard','Poke0342.png'),
+('0343','Balbuto','Poke0343.png'),
+('0344','Kaorine','Poke0344.png'),
+('0345','Lilia','Poke0345.png'),
+('0346','Vacilys','Poke0346.png'),
+('0347','Anorith','Poke0347.png'),
+('0348','Armaldo','Poke0348.png'),
+('0349','Barpau','Poke0349.png'),
+('0350','Milobellus','Poke0350.png'),
+('0351','Morphéo','Poke0351.png'),
+('0352','Kecleon','Poke0352.png'),
+('0353','Polichombr','Poke0353.png'),
+('0354','Branette','Poke0354.png'),
+('0355','Skélénox','Poke0355.png'),
+('0356','Téraclope','Poke0356.png'),
+('0357','Tropius','Poke0357.png'),
+('0358','Éoko','Poke0358.png'),
+('0359','Absol','Poke0359.png'),
+('0360','Okéoké','Poke0360.png'),
+('0361','Stalgamin','Poke0361.png'),
+('0362','Oniglali','Poke0362.png'),
+('0363','Obalie','Poke0363.png'),
+('0364','Phogleur','Poke0364.png'),
+('0365','Kaimorse','Poke0365.png'),
+('0366','Coquiperl','Poke0366.png'),
+('0367','Serpang','Poke0367.png'),
+('0368','Rosabyss','Poke0368.png'),
+('0369','Relicanth','Poke0369.png'),
+('0370','Lovdisc','Poke0370.png'),
+('0371','Draby','Poke0371.png'),
+('0372','Drackhaus','Poke0372.png'),
+('0373','Drattak','Poke0373.png'),
+('0374','Terhal','Poke0374.png'),
+('0375','Métang','Poke0375.png'),
+('0376','Métalosse','Poke0376.png'),
+('0377','Regirock','Poke0377.png'),
+('0378','Regice','Poke0378.png'),
+('0379','Registeel','Poke0379.png'),
+('0380','Latias','Poke0380.png'),
+('0381','Latios','Poke0381.png'),
+('0382','Kyogre','Poke0382.png'),
+('0383','Groudon','Poke0383.png'),
+('0384','Rayquaza','Poke0384.png'),
+('0385','Jirachi','Poke0385.png'),
+('0386','Deoxys','Poke0386.png');
+
+
+--Generation 4 --
+INSERT INTO Pokedex (Id, Nom, Image) VALUES
+('0387','Tortipouss','Poke0387.png'),
+('0388','Boskara','Poke0388.png'),
+('0389','Torterra','Poke0389.png'),
+('0390','Ouisticram','Poke0390.png'),
+('0391','Chimpenfeu','Poke0391.png'),
+('0392','Simiabraz','Poke0392.png'),
+('0393','Tiplouf','Poke0393.png'),
+('0394','Prinplouf','Poke0394.png'),
+('0395','Pingoléon','Poke0395.png'),
+('0396','Étourmi','Poke0396.png'),
+('0397','Étourvol','Poke0397.png'),
+('0398','Étouraptor','Poke0398.png'),
+('0399','Keunotor','Poke0399.png'),
+('0400','Castorno','Poke0400.png'),
+('0401','Crikzik','Poke0401.png'),
+('0402','Mélokrik','Poke0402.png'),
+('0403','Lixy','Poke0403.png'),
+('0404','Luxio','Poke0404.png'),
+('0405','Luxray','Poke0405.png'),
+('0406','Rozbouton','Poke0406.png'),
+('0407','Roserade','Poke0407.png'),
+('0408','Kranidos','Poke0408.png'),
+('0409','Charkos','Poke0409.png'),
+('0410','Dinoclier','Poke0410.png'),
+('0411','Bastiodon','Poke0411.png'),
+('0412','Cheniti','Poke0412.png'),
+('0413','Cheniselle','Poke0413.png'),
+('0414','Papilord','Poke0414.png'),
+('0415','Apitrini','Poke0415.png'),
+('0416','Apireine','Poke0416.png'),
+('0417','Pachirisu','Poke0417.png'),
+('0418','Moustillon','Poke0418.png'),
+('0419','Mateloutre','Poke0419.png'),
+('0420','Clamiral','Poke0420.png'),
+('0421','Ratentif','Poke0421.png'),
+('0422','Miradar','Poke0422.png'),
+('0423','Ponchiot','Poke0423.png'),
+('0424','Ponchien','Poke0424.png'),
+('0425','Mastouffe','Poke0425.png'),
+('0426','Chacripan','Poke0426.png'),
+('0427','Léopardus','Poke0427.png'),
+('0428','Feuillajou','Poke0428.png'),
+('0429','Feuiloutan','Poke0429.png'),
+('0430','Flamajou','Poke0430.png'),
+('0431','Flamoutan','Poke0431.png'),
+('0432','Flotajou','Poke0432.png'),
+('0433','Flotoutan','Poke0433.png'),
+('0434','Munna','Poke0434.png'),
+('0435','Mushana','Poke0435.png'),
+('0436','Poichigeon','Poke0436.png'),
+('0437','Colombeau','Poke0437.png'),
+('0438','Déflaisan','Poke0438.png'),
+('0439','Zébibron','Poke0439.png'),
+('0440','Zéblitz','Poke0440.png'),
+('0441','Nanméouïe','Poke0441.png'),
+('0442','Charpenti','Poke0442.png'),
+('0443','Ouvrifier','Poke0443.png'),
+('0444','Bétochef','Poke0444.png'),
+('0445','Tritonde','Poke0445.png'),
+('0446','Batracné','Poke0446.png'),
+('0447','Crapustule','Poke0447.png'),
+('0448','Judokrak','Poke0448.png'),
+('0449','Karaclée','Poke0449.png'),
+('0450','Larveyette','Poke0450.png'),
+('0451','Couverdure','Poke0451.png'),
+('0452','Manternel','Poke0452.png'),
+('0453','Venipatte','Poke0453.png'),
+('0454','Scobolide','Poke0454.png'),
+('0455','Brutapode','Poke0455.png'),
+('0456','Doudouvet','Poke0456.png'),
+('0457','Farfaduvet','Poke0457.png'),
+('0458','Chlorobule','Poke0458.png'),
+('0459','Fragilady','Poke0459.png'),
+('0460','Bargantua','Poke0460.png'),
+('0461','Mascaïman','Poke0461.png'),
+('0462','Escroco','Poke0462.png'),
+('0463','Crocorible','Poke0463.png'),
+('0464','Darumarond','Poke0464.png'),
+('0465','Darumacho','Poke0465.png'),
+('0466','Maracachi','Poke0466.png'),
+('0467','Crikzik','Poke0467.png'),
+('0468','Mélokrik','Poke0468.png'),
+('0469','Lixy','Poke0469.png'),
+('0470','Luxio','Poke0470.png'),
+('0471','Luxray','Poke0471.png'),
+('0472','Rozbouton','Poke0472.png'),
+('0473','Roserade','Poke0473.png'),
+('0474','Kranidos','Poke0474.png'),
+('0475','Charkos','Poke0475.png'),
+('0476','Dinoclier','Poke0476.png'),
+('0477','Bastiodon','Poke0477.png'),
+('0478','Cheniti','Poke0478.png'),
+('0479','Cheniselle','Poke0479.png'),
+('0480','Créhelf','Poke0480.png'),
+('0481','Créfollet','Poke0481.png'),
+('0482','Créfadet','Poke0482.png'),
+('0483','Dialga','Poke0483.png'),
+('0484','Palkia','Poke0484.png'),
+('0485','Heatran','Poke0485.png'),
+('0486','Regigigas','Poke0486.png'),
+('0487','Giratina','Poke0487.png'),
+('0488','Cresselia','Poke0488.png'),
+('0489','Phione','Poke0489.png'),
+('0490','Manaphy','Poke0490.png'),
+('0491','Darkrai','Poke0491.png'),
+('0492','Shaymin','Poke0492.png'),
+('0493','Arceus','Poke0493.png');
+
+
+-- Generation 5 --
+INSERT INTO Pokedex (Id, Nom, Image) VALUES
+('0494','Victini','Poke0494.png'),
+('0495','Vipélierre','Poke0495.png'),
+('0496','Lianaja','Poke0496.png'),
+('0497','Majaspic','Poke0497.png'),
+('0498','Gruikui','Poke0498.png'),
+('0499','Grotichon','Poke0499.png'),
+('0500','Roitiflam','Poke0500.png'),
+('0501','Moustillon','Poke0501.png'),
+('0502','Mateloutre','Poke0502.png'),
+('0503','Clamiral','Poke0503.png'),
+('0504','Ratentif','Poke0504.png'),
+('0505','Miradar','Poke0505.png'),
+('0506','Ponchiot','Poke0506.png'),
+('0507','Ponchien','Poke0507.png'),
+('0508','Mastouffe','Poke0508.png'),
+('0509','Chacripan','Poke0509.png'),
+('0510','Léopardus','Poke0510.png'),
+('0511','Feuillajou','Poke0511.png'),
+('0512','Feuiloutan','Poke0512.png'),
+('0513','Flamajou','Poke0513.png'),
+('0514','Flamoutan','Poke0514.png'),
+('0515','Flotajou','Poke0515.png'),
+('0516','Flotoutan','Poke0516.png'),
+('0517','Munna','Poke0517.png'),
+('0518','Mushana','Poke0518.png'),
+('0519','Poichigeon','Poke0519.png'),
+('0520','Colombeau','Poke0520.png'),
+('0521','Déflaisan','Poke0521.png'),
+('0522','Zébibron','Poke0522.png'),
+('0523','Zéblitz','Poke0523.png'),
+('0524','Nodulithe','Poke0524.png'),
+('0525','Géolithe','Poke0525.png'),
+('0526','Gigalithe','Poke0526.png'),
+('0527','Chovsourir','Poke0527.png'),
+('0528','Rhinolove','Poke0528.png'),
+('0529','Bastiodon','Poke0529.png'),
+('0530','Cheniti','Poke0530.png'),
+('0531','Cheniselle','Poke0531.png'),
+('0532','Papilord','Poke0532.png'),
+('0533','Apitrini','Poke0533.png'),
+('0534','Apireine','Poke0534.png'),
+('0535','Pachirisu','Poke0535.png'),
+('0536','Moustillon','Poke0536.png'),
+('0537','Mateloutre','Poke0537.png'),
+('0538','Clamiral','Poke0538.png'),
+('0539','Ratentif','Poke0539.png'),
+('0540','Miradar','Poke0540.png'),
+('0541','Ponchiot','Poke0541.png'),
+('0542','Ponchien','Poke0542.png'),
+('0543','Mastouffe','Poke0543.png'),
+('0544','Chacripan','Poke0544.png'),
+('0545','Léopardus','Poke0545.png'),
+('0546','Feuillajou','Poke0546.png'),
+('0547','Feuiloutan','Poke0547.png'),
+('0548','Flamajou','Poke0548.png'),
+('0549','Flamoutan','Poke0549.png'),
+('0550','Flotajou','Poke0550.png'),
+('0551','Flotoutan','Poke0551.png'),
+('0552','Munna','Poke0552.png'),
+('0553','Mushana','Poke0553.png'),
+('0554','Poichigeon','Poke0554.png'),
+('0555','Colombeau','Poke0555.png'),
+('0556','Déflaisan','Poke0556.png'),
+('0557','Zébibron','Poke0557.png'),
+('0558','Zéblitz','Poke0558.png'),
+('0559','Nodulithe','Poke0559.png'),
+('0560','Géolithe','Poke0560.png'),
+('0561','Gigalithe','Poke0561.png'),
+('0562','Chovsourir','Poke0562.png'),
+('0563','Rhinolove','Poke0563.png'),
+('0564','Bastiodon','Poke0564.png'),
+('0565','Cheniti','Poke0565.png'),
+('0566','Cheniselle','Poke0566.png'),
+('0567','Papilord','Poke0567.png'),
+('0568','Apitrini','Poke0568.png'),
+('0569','Apireine','Poke0569.png'),
+('0570','Pachirisu','Poke0570.png'),
+('0571','Moustillon','Poke0571.png'),
+('0572','Mateloutre','Poke0572.png'),
+('0573','Clamiral','Poke0573.png'),
+('0574','Ratentif','Poke0574.png'),
+('0575','Miradar','Poke0575.png'),
+('0576','Ponchiot','Poke0576.png'),
+('0577','Ponchien','Poke0577.png'),
+('0578','Mastouffe','Poke0578.png'),
+('0579','Chacripan','Poke0579.png'),
+('0580','Léopardus','Poke0580.png'),
+('0581','Feuillajou','Poke0581.png'),
+('0582','Feuiloutan','Poke0582.png'),
+('0583','Flamajou','Poke0583.png'),
+('0584','Flamoutan','Poke0584.png'),
+('0585','Flotajou','Poke0585.png'),
+('0586','Flotoutan','Poke0586.png'),
+('0587','Munna','Poke0587.png'),
+('0588','Mushana','Poke0588.png'),
+('0589','Poichigeon','Poke0589.png'),
+('0590','Colombeau','Poke0590.png'),
+('0591','Déflaisan','Poke0591.png'),
+('0592','Zébibron','Poke0592.png'),
+('0593','Zéblitz','Poke0593.png'),
+('0594','Nodulithe','Poke0594.png'),
+('0595','Géolithe','Poke0595.png'),
+('0596','Gigalithe','Poke0596.png'),
+('0597','Chovsourir','Poke0597.png'),
+('0598','Rhinolove','Poke0598.png'),
+('0599','Bastiodon','Poke0599.png'),
+('0600','Cheniti','Poke0600.png'),
+('0601','Cheniselle','Poke0601.png'),
+('0602','Papilord','Poke0602.png'),
+('0603','Apitrini','Poke0603.png'),
+('0604','Apireine','Poke0604.png'),
+('0605','Pachirisu','Poke0605.png'),
+('0606','Moustillon','Poke0606.png'),
+('0607','Mateloutre','Poke0607.png'),
+('0608','Clamiral','Poke0608.png'),
+('0609','Ratentif','Poke0609.png'),
+('0610','Miradar','Poke0610.png'),
+('0611','Ponchiot','Poke0611.png'),
+('0612','Ponchien','Poke0612.png'),
+('0613','Mastouffe','Poke0613.png'),
+('0614','Chacripan','Poke0614.png'),
+('0615','Léopardus','Poke0615.png'),
+('0616','Feuillajou','Poke0616.png'),
+('0617','Feuiloutan','Poke0617.png'),
+('0618','Flamajou','Poke0618.png'),
+('0619','Flamoutan','Poke0619.png'),
+('0620','Flotajou','Poke0620.png'),
+('0621','Flotoutan','Poke0621.png'),
+('0622','Munna','Poke0622.png'),
+('0623','Mushana','Poke0623.png'),
+('0624','Poichigeon','Poke0624.png'),
+('0625','Colombeau','Poke0625.png'),
+('0626','Déflaisan','Poke0626.png'),
+('0627','Zébibron','Poke0627.png'),
+('0628','Zéblitz','Poke0628.png'),
+('0629','Nodulithe','Poke0629.png'),
+('0630','Géolithe','Poke0630.png'),
+('0631','Gigalithe','Poke0631.png'),
+('0632','Chovsourir','Poke0632.png'),
+('0633','Rhinolove','Poke0633.png'),
+('0634','Bastiodon','Poke0634.png'),
+('0635','Cheniti','Poke0635.png'),
+('0636','Cheniselle','Poke0636.png'),
+('0637','Papilord','Poke0637.png'),
+('0638','Apitrini','Poke0638.png'),
+('0639','Apireine','Poke0639.png'),
+('0640','Pachirisu','Poke0640.png'),
+('0641','Moustillon','Poke0641.png'),
+('0642','Mateloutre','Poke0642.png'),
+('0643','Clamiral','Poke0643.png'),
+('0644','Ratentif','Poke0644.png'),
+('0645','Miradar','Poke0645.png'),
+('0646','Ponchiot','Poke0646.png'),
+('0647','Ponchien','Poke0647.png'),
+('0648','Mastouffe','Poke0648.png'),
+('0649','Genesect','Poke0649.png');
+
+
+-- Generation 6 --
+INSERT INTO Pokedex (Id, Nom, Image) VALUES
+('0650','Marisson','Poke0650.png'),
+('0651','Boguérisse','Poke0651.png'),
+('0652','Blindépique','Poke0652.png'),
+('0653','Feunnec','Poke0653.png'),
+('0654','Roussil','Poke0654.png'),
+('0655','Goupelin','Poke0655.png'),
+('0656','Grenousse','Poke0656.png'),
+('0657','Croâporal','Poke0657.png'),
+('0658','Amphinobi','Poke0658.png'),
+('0659','Sapereau','Poke0659.png'),
+('0660','Excavarenne','Poke0660.png'),
+('0661','Passerouge','Poke0661.png'),
+('0662','Braisillon','Poke0662.png'),
+('0663','Flambusard','Poke0663.png'),
+('0664','Lépidonille','Poke0664.png'),
+('0665','Pérégrain','Poke0665.png'),
+('0666','Prismillon','Poke0666.png'),
+('0667','Hélionceau','Poke0667.png'),
+('0668','Némélios','Poke0668.png'),
+('0669','Flabébé','Poke0669.png'),
+('0670','Floette','Poke0670.png'),
+('0671','Florges','Poke0671.png'),
+('0672','Cabriolaine','Poke0672.png'),
+('0673','Chevroum','Poke0673.png'),
+('0674','Pandespiègle','Poke0674.png'),
+('0675','Pandarbare','Poke0675.png'),
+('0676','Couafarel','Poke0676.png'),
+('0677','Psystigri','Poke0677.png'),
+('0678','Mistigrix','Poke0678.png'),
+('0679','Monorpale','Poke0679.png'),
+('0680','Dimoclès','Poke0680.png'),
+('0681','Exagide','Poke0681.png'),
+('0682','Fluvetin','Poke0682.png'),
+('0683','Cocotine','Poke0683.png'),
+('0684','Sucroquin','Poke0684.png'),
+('0685','Cupcanaille','Poke0685.png'),
+('0686','Sepiatop','Poke0686.png'),
+('0687','Sepiatroce','Poke0687.png'),
+('0688','Opermine','Poke0688.png'),
+('0689','Golgopathe','Poke0689.png'),
+('0690','Venalgue','Poke0690.png'),
+('0691','Kravarech','Poke0691.png'),
+('0692','Flingouste','Poke0692.png'),
+('0693','Gamblast','Poke0693.png'),
+('0694','Galvaran','Poke0694.png'),
+('0695','Iguolta','Poke0695.png'),
+('0696','Ptyranidur','Poke0696.png'),
+('0697','Rexillius','Poke0697.png'),
+('0698','Amagara','Poke0698.png'),
+('0699','Dragmara','Poke0699.png'),
+('0700','Nymphali','Poke0700.png'),
+('0701','Brutalibré','Poke0701.png'),
+('0702','Dedenne','Poke0702.png'),
+('0703','Strassie','Poke0703.png'),
+('0704','Mucuscule','Poke0704.png'),
+('0705','Colimucus','Poke0705.png'),
+('0706','Muplodocus','Poke0706.png'),
+('0707','Trousselin','Poke0707.png'),
+('0708','Brocelôme','Poke0708.png'),
+('0709','Desseliande','Poke0709.png'),
+('0710','Pitrouille','Poke0710.png'),
+('0711','Banshitrouye','Poke0711.png'),
+('0712','Grelaçon','Poke0712.png'),
+('0713','Séracrawl','Poke0713.png'),
+('0714','Sonistrelle','Poke0714.png'),
+('0715','Bruyverne','Poke0715.png'),
+('0716','Xerneas','Poke0716.png'),
+('0717','Yveltal','Poke0717.png'),
+('0721','Volcanion','Poke0721.png');
+
+
