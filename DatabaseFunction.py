@@ -79,6 +79,7 @@ def init_database():
         CREATE TABLE IF NOT EXISTS CommandHistory (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             userId INTEGER NOT NULL,
+            Pseudo TEXT,
             commandName TEXT NOT NULL,
             timestamp DATETIME NOT NULL,
             FOREIGN KEY (userId) REFERENCES User(Id)

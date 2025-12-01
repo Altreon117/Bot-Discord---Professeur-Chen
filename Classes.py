@@ -177,7 +177,7 @@ class PokedexView(discord.ui.View):
         self.page = 0
         self.search_term: str | None = None
 
-        # Désactiver temporairement les générations non disponibles (2-6)
+        # Désactiver temporairement les générations non disponibles (2-6) (pas le temps et flemme de renommer  ~600 images)
         try:
             counts = {g: self.db.get_pokedex_count_range(g) for g in range(1, 7)}
             # Enable if count > 0 else disable
